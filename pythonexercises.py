@@ -47,6 +47,15 @@ def power2(x, e):
 	
 def calculate(a, b, c, d, e,):
 	return (a + b / d - e) * c
+	
+def ratio(al , fred):
+	if al > fred:
+		return al / fred
+	else:
+		return fred / al
+		
+def pythagoras(a, b):
+	return (a**2 + b**2)**(.5)
 
 def main_arithmetic():
 	print "test reverse(3): ", reverse(3)
@@ -59,11 +68,52 @@ def main_arithmetic():
 	print "test power(2, 3): ", power(2, 3)
 	print "test power2(2, 3): ", power2(2, 3)
 	print "test calculate(1, 2, 3, 4, 5): ", calculate(1, 2, 3, 4, 5)
+	print "test ratio(3.2, 7.8): ", ratio(3.2, 7.8)
+	print "test ratio(7.8, 3.2): ", ratio(7.8, 3.2)
+	print "testing pythagoras(3, 4): ", pythagoras(3, 4)
+	print "testing pythagoran(35, 67): ", pythagoras(35, 67)
 	
+	
+	
+#Boolean Expressions (logic)
+
+def reverse(zack):
+	return not zack
+	
+def band(a, b):
+	if a == True and b == True:
+		return True
+	else:
+		return False
+	
+def band2(a, b):
+	return a and b
+	
+def bor(a, b):
+	if a == True or b == True:
+		return True
+	else:
+		return False
+	
+def bor2(a, b):
+	return a or b
+		
+		
+def main_boolean():
+	print "test reverse(True): ", reverse(True)
+	print "test reverse(False): ", reverse(False)
+	print "test reverse(1): ", reverse(1)
+	print "test reverse(0): ", reverse(0)
+	print "test reverse(18): ", reverse(18)	
+	print "test band(True, True): ", band(True, True)
+	print "test band2(False, True): ", band2(False, True)
+	print "test bor(True, False): ", bor(True, False)
+	print "test bor(False, False): ", bor2(False, False)
 	
 	
 def main():
 	main_function()
 	main_arithmetic()
+	main_boolean()
 	
 main()
